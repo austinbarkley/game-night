@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Game Night",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

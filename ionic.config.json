@@ -1,0 +1,8 @@
+{
+  "name": "Game Night",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "4e6e7bf4"
+}
