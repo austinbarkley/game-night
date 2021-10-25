@@ -1,5 +1,6 @@
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+import SideNav from 'components/SideNav';
 // eslint-disable-next-line import/order
 import { Redirect, Route } from 'react-router-dom';
 
@@ -22,16 +23,23 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.scss';
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/">
-          <Redirect to="/tab1" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
-);
+/* Views import */
+import { Calendar } from 'views/Calendar';
+import Home from 'views/Home';
+
+const App: React.FC = () => {
+  return (
+    <IonApp>
+      <IonReactRouter>
+        <SideNav />
+        <IonRouterOutlet>
+          <Redirect to="/" />
+          <Route exact path="/" component={Home}></Route>
+          <Route path="/calendar" component={Calendar} />
+        </IonRouterOutlet>
+      </IonReactRouter>
+    </IonApp>
+  );
+};
 
 export default App;
