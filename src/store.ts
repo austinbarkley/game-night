@@ -1,10 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
-import sideNavReducer from 'shared/slices/sideNav';
 
 export const store = configureStore({
-  reducer: {
-    sideNav: sideNavReducer,
-  },
+  reducer: {},
 });
 
 // Infer the `RootState` and `AppDispatch` types from the store itself

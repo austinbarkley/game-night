@@ -15,7 +15,7 @@ export const Toolbar: React.FC<IToolbarProps> = () => {
     <IonToolbar>
       <IonButtons>
         <IonMenuButton onClick={toggleSideNav}></IonMenuButton>
-        <IonTitle>Game Night</IonTitle>
+        <IonTitle>Game Nights</IonTitle>
       </IonButtons>
     </IonToolbar>
   );
