@@ -2,7 +2,7 @@
   "files": {
     "static/js/0.84c1645f.chunk.js": "/game-night/static/js/0.84c1645f.chunk.js",
     "static/js/0.84c1645f.chunk.js.map": "/game-night/static/js/0.84c1645f.chunk.js.map",
-    "main.css": "/game-night/static/css/main.0abd5d1e.chunk.css",
+    "main.css": "/game-night/static/css/main.afc15115.chunk.css",
     "main.js": "/game-night/static/js/main.f6591de2.chunk.js",
     "main.js.map": "/game-night/static/js/main.f6591de2.chunk.js.map",
     "polyfills-dom.js": "/game-night/static/js/polyfills-dom.b4a180ff.chunk.js",
@@ -124,7 +124,7 @@
     "service-worker.js": "/game-night/service-worker.js",
     "service-worker.js.map": "/game-night/service-worker.js.map",
     "static/css/4.532f36fa.chunk.css.map": "/game-night/static/css/4.532f36fa.chunk.css.map",
-    "static/css/main.0abd5d1e.chunk.css.map": "/game-night/static/css/main.0abd5d1e.chunk.css.map",
+    "static/css/main.afc15115.chunk.css.map": "/game-night/static/css/main.afc15115.chunk.css.map",
     "static/js/4.243b1e0b.chunk.js.LICENSE.txt": "/game-night/static/js/4.243b1e0b.chunk.js.LICENSE.txt",
     "static/js/52.7ef3c77a.chunk.js.LICENSE.txt": "/game-night/static/js/52.7ef3c77a.chunk.js.LICENSE.txt",
     "static/js/polyfills-dom.b4a180ff.chunk.js.LICENSE.txt": "/game-night/static/js/polyfills-dom.b4a180ff.chunk.js.LICENSE.txt"
@@ -133,7 +133,7 @@
     "static/js/runtime-main.aa3ad075.js",
     "static/css/4.532f36fa.chunk.css",
     "static/js/4.243b1e0b.chunk.js",
-    "static/css/main.0abd5d1e.chunk.css",
+    "static/css/main.afc15115.chunk.css",
     "static/js/main.f6591de2.chunk.js"
   ]
 }
