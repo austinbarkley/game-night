@@ -10,6 +10,7 @@
     "@capacitor/status-bar": "1.0.5",
     "@ionic/react": "^5.5.0",
     "@ionic/react-router": "^5.5.0",
+    "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
@@ -22,9 +23,11 @@
     "i18next": "^21.3.3",
     "ionicons": "^5.4.0",
     "node-sass": "^6.0.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-i18next": "^11.12.0",
+    "react-redux": "^7.2.5",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
@@ -52,7 +55,8 @@
     "lint": "npm run eslint && npm run prettier -- --check",
     "fmt": "npm run eslint -- --fix && npm run prettier -- --write",
     "prettier": "prettier \"**/*.ts\"",
-    "eslint": "eslint . --ext .ts"
+    "eslint": "eslint . --ext .ts",
+    "commit": "cz"
   },
   "browserslist": {
     "production": [
@@ -68,10 +72,15 @@
   },
   "devDependencies": {
     "@capacitor/cli": "3.2.5",
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
     "@ionic/eslint-config": "^0.3.0",
     "@ionic/prettier-config": "^2.0.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
-    "husky": "^7.0.4"
+    "husky": "^7.0.4",
+    "lint-staged": "^11.2.4",
+    "prettier": "^2.4.1"
   },
   "description": "An Ionic project",
   "eslintConfig": {
@@ -80,7 +89,14 @@
   "prettier": "@ionic/prettier-config",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint"
+      "pre-commit": "lint-staged && npm run lint",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
