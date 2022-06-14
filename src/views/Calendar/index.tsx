@@ -1,13 +1,15 @@
-import { IonButton, IonContent, IonPage } from '@ionic/react';
+import { IonCol, IonContent, IonGrid, IonPage, IonRow } from '@ionic/react';
 import Toolbar from 'components/Toolbar';
 import type PropTypes from 'prop-types';
 import { Route, Switch } from 'react-router';
+
+import { Calendar } from './components';
 
 const propTypes = {};
 
 type ICalendarProps = PropTypes.InferProps<typeof propTypes>;
 
-export const Calendar: React.FC<ICalendarProps> = () => {
+export const CalendarView: React.FC<ICalendarProps> = () => {
   return (
     <IonPage id="main">
       <Toolbar />
@@ -15,7 +17,13 @@ export const Calendar: React.FC<ICalendarProps> = () => {
       <IonContent>
         <Switch>
           <Route exact path="">
-            <IonButton>test</IonButton>
+            <IonGrid style={{ marginTop: '24px' }}>
+              <IonRow>
+                <IonCol size="12">
+                  <Calendar />
+                </IonCol>
+              </IonRow>
+            </IonGrid>
           </Route>
         </Switch>
       </IonContent>
@@ -23,6 +31,6 @@ export const Calendar: React.FC<ICalendarProps> = () => {
   );
 };
 
-Calendar.propTypes = propTypes;
+CalendarView.propTypes = propTypes;
 
-export default Calendar;
+export default CalendarView;

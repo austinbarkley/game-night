@@ -24,7 +24,7 @@ import '@ionic/react/css/display.css';
 import './theme/variables.scss';
 
 /* Views import */
-import { Calendar } from 'views/Calendar';
+import { CalendarView } from 'views/Calendar';
 import Home from 'views/Home';
 
 const App: React.FC = () => {
@@ -35,7 +35,7 @@ const App: React.FC = () => {
         <IonRouterOutlet>
           <Redirect to="/" />
           <Route exact path="/" component={Home}></Route>
-          <Route path="/calendar" component={Calendar} />
+          <Route path="/calendar" component={CalendarView} />
         </IonRouterOutlet>
       </IonReactRouter>
     </IonApp>

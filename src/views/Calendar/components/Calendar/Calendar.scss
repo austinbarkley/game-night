@@ -1,0 +1,43 @@
+$row-height: 75px;
+
+.calendar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  & .time-ranges {
+    width: 80px;
+    margin-right: 20px;
+
+    & .time {
+      height: $row-height;
+    }
+  }
+
+  & .time-selection-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    & .time-selection {
+      background-color: lightgrey;
+      height: $row-height;
+
+      border-bottom: 1px dashed grey;
+
+      &:last-child {
+        border-bottom: 0px;
+      }
+
+      &--selected {
+        background-color: green;
+      }
+
+      &.hoverable {
+        &:hover {
+          background-color: lightgreen;
+        }
+      }
+    }
+  }
+}
